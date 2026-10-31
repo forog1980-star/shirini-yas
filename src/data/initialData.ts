@@ -4,7 +4,7 @@ export const initialBakerProfile: BakerProfile = {
   name: 'سحر',
   brandName: 'کارگاه شیرینی خانگی یاس',
   bio: 'شیرینی‌ها و کیک‌های خانگی یاس؛ با امکان انتخاب وزن، طعم و توضیحات دلخواه برای سفارش.',
-  avatar: '/assets/aistudio/photo_2026-10-11_20-52-21_08dc8782.jpg',
+  avatar: `${import.meta.env.BASE_URL}assets/aistudio/photo_2026-10-11_20-52-21_08dc8782.jpg`,
   phone: '',
   address: '',
   workingHours: 'همه روزه از ساعت ۸:۰۰ تا ۲۱:۰۰ (پاسخگویی و ارسال سفارش)',
@@ -28,9 +28,8 @@ export const initialProducts: Product[] = [
     description: 'شیرینی نان‌خامه‌ای تازه با خمیر شو سبک و لطیف، پر شده از خامه قنادی حیوانی کم‌شیرین با عطر ملایم وانیل ماداگاسکار و روکش گاناش شکلات شیری دست‌ساز.',
     ingredients: ['خامه حیوانی تازه ۳۵٪', 'کره پاستوریزه طبیعی', 'آرد گندم اعلا', 'تخم‌مرغ محلی', 'وانیل طبیعی', 'شکلات ۵۴٪ بلژیکی'],
     photos: [
-      'https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1558326567-98ae2405596b?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80'
+      `${import.meta.env.BASE_URL}assets/products/cream-puffs-01.jpg`,
+      `${import.meta.env.BASE_URL}assets/products/cream-puffs-02.jpg`
     ],
     isAvailable: true,
     isBestseller: true,
@@ -51,8 +50,8 @@ export const initialProducts: Product[] = [
     description: 'اسفنج اسفنجی فوق‌العاده نرم با بافت پنبه‌ای، لایه‌های کرم خامه تازه و مارمالاد توت‌فرنگی ارگانیک دست‌ساز و دانه‌های خلال پسته معطر.',
     ingredients: ['توت‌فرنگی تازه گلخانه‌ای', 'خامه قنادی کم‌چرب', 'گلاب دوآتشه کاشان', 'خلال پسته سبز رفسنجان', 'شکر قهوه‌ای'],
     photos: [
-      'https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=900&q=80'
+      `${import.meta.env.BASE_URL}assets/products/strawberry-roll-01.jpg`,
+      `${import.meta.env.BASE_URL}assets/products/strawberry-roll-02.jpg`
     ],
     isAvailable: true,
     isBestseller: false,
@@ -73,8 +72,8 @@ export const initialProducts: Product[] = [
     description: 'شیرینی دانمارکی هزارلا با ورقه‌های ترد کره‌ای، مغز کرم کاستارد خانگی غلیظ با رایحه هل سبز هندی و شهد زعفرانی براق.',
     ingredients: ['کره حیوانی مخصوص لایه‌بندی', 'پودر هل اعلا', 'زعفران ممتاز قائنات', 'کرم کاستارد دست‌ساز', 'کنجد برشته'],
     photos: [
-      'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=80'
+      `${import.meta.env.BASE_URL}assets/products/danish-pastry-01.jpg`,
+      `${import.meta.env.BASE_URL}assets/products/danish-pastry-02.jpg`
     ],
     isAvailable: true,
     isBestseller: true,
@@ -95,8 +94,8 @@ export const initialProducts: Product[] = [
     description: 'رویه کاراملی سوخته شگفت‌انگیز با بافت درونی فوق‌العاده خامه‌ای، ابریشمی و مذاب. تهیه شده با پنیر ماسکارپونه ایتالیایی و خامه غلیظ.',
     ingredients: ['پنیر خامه‌ای ماسکارپونه', 'خامه حیوانی سنگین', 'عصاره وانیل بوربن', 'تخم‌مرغ روز', 'شکر دانه ریز'],
     photos: [
-      'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=80'
+      `${import.meta.env.BASE_URL}assets/products/basque-cheesecake-01.jpg`,
+      `${import.meta.env.BASE_URL}assets/products/basque-cheesecake-02.jpg`
     ],
     isAvailable: true,
     isBestseller: true,
@@ -117,8 +116,8 @@ export const initialProducts: Product[] = [
     description: 'کیک پرطرفدار پاییزی با هویج تازه رنده شده، مغز گردوی تویسرکان فراوان، ادویه‌های گرم دارچین سیلان و جوز هندی با فیلینگ کرم چیز لیمویی.',
     ingredients: ['هویج تازه شیرین', 'گردوی ممتاز تویسرکان', 'دارچین خالص سیلان', 'پنیر فیلادلفیا', 'روغن کنجد ارگانیک'],
     photos: [
-      'https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80'
+      `${import.meta.env.BASE_URL}assets/products/carrot-cake-01.jpg`,
+      `${import.meta.env.BASE_URL}assets/products/carrot-cake-02.jpg`
     ],
     isAvailable: true,
     isBestseller: false,
@@ -139,8 +138,8 @@ export const initialProducts: Product[] = [
     description: 'لایه‌های فوق نازک خمیر یوفکا دست‌ساز، پر شده با ترکیب گردو و مغز پسته سبز، آغشته به شربت زعفران غلیظ با عطر کره محلی و هل اعلا.',
     ingredients: ['مغز گردو درجه یک', 'مغز پسته اعلا', 'زعفران قائنات', 'کره محلی گوسفندی', 'هل سبز ساییده'],
     photos: [
-      'https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=900&q=80'
+      `${import.meta.env.BASE_URL}assets/products/baklava-01.jpg`,
+      `${import.meta.env.BASE_URL}assets/products/baklava-02.jpg`
     ],
     isAvailable: true,
     isBestseller: true,
@@ -161,8 +160,8 @@ export const initialProducts: Product[] = [
     description: 'شیرینی‌های نوستالژیک که در دهان آب می‌شوند! تهیه شده با آرد نخودچی دوآتشه خانگی، روغن حیوانی کرمانشاهی و تزیین سیاه دانه و پودر پسته.',
     ingredients: ['آرد نخودچی خالص دوآتشه', 'آرد برنج معطر گیلان', 'روغن حیوانی کرمانشاهی', 'هل و زعفران', 'سیاه دانه'],
     photos: [
-      'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=900&q=80'
+      `${import.meta.env.BASE_URL}assets/products/traditional-cookies-01.jpg`,
+      `${import.meta.env.BASE_URL}assets/products/traditional-cookies-02.jpg`
     ],
     isAvailable: true,
     isBestseller: false,
@@ -183,8 +182,8 @@ export const initialProducts: Product[] = [
     description: 'تارتلت‌های ترد کره‌ای با فیلینگ کرم دیپلمات فرانسوی، تزیین شده با میوه‌های تازه فصلی (تمشک، بلوبری، کیوی و توت‌فرنگی) و لعاب ملایم میوه‌ای.',
     ingredients: ['میوه‌های فصلی شسته و تازه', 'کره طبیعی فرانسوی', 'کرم وانیل ماداگاسکار', 'شکلات سفید مرغوب', 'پودر بادام'],
     photos: [
-      'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=900&q=80'
+      `${import.meta.env.BASE_URL}assets/products/fruit-tart-01.jpg`,
+      `${import.meta.env.BASE_URL}assets/products/fruit-tart-02.jpg`
     ],
     isAvailable: true,
     isBestseller: true,

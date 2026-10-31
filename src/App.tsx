@@ -60,7 +60,7 @@ export default function App() {
   
   // Custom Logo State - Official Yas Confectionery Emblem
   const [customLogoUrl, setCustomLogoUrl] = useState<string | null>(
-    '/assets/aistudio/photo_2026-10-11_20-52-21_08dc8782.jpg'
+    `${import.meta.env.BASE_URL}assets/aistudio/photo_2026-10-11_20-52-21_08dc8782.jpg`
   );
   const [isLogoModalOpen, setIsLogoModalOpen] = useState(false);
   const [isHostingGuideOpen, setIsHostingGuideOpen] = useState(false);

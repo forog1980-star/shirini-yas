@@ -4,8 +4,10 @@ import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
+  const base = process.env.VERCEL === '1' ? '/' : '/shirini-yas/';
+
   return {
-    base: '/shirini-yas/',
+    base,
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
