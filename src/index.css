@@ -52,3 +52,17 @@ body {
 }
 ::-webkit-scrollbar-track { background: #fbf4fa; }
 ::-webkit-scrollbar-thumb { background: #d8bfd8; }
+
+
+/* Cohesive pastel overrides for existing utility-heavy components */
+[class~="bg-stone-900"], [class~="bg-stone-800"] { background-color: #80547f !important; }
+[class~="bg-stone-100"], [class~="bg-stone-50"] { background-color: #f8eff7 !important; }
+[class~="bg-amber-600"] { background-color: #a978a4 !important; }
+[class~="bg-amber-700"] { background-color: #80547f !important; }
+[class~="text-stone-900"], [class~="text-stone-800"] { color: #79527e !important; }
+[class~="text-stone-700"], [class~="text-stone-600"], [class~="text-stone-500"] { color: #947b96 !important; }
+[class~="text-amber-700"], [class~="text-amber-800"], [class~="text-amber-900"] { color: #80547f !important; }
+[class~="border-stone-200"], [class~="border-stone-300"] { border-color: #ead9eb !important; }
+[class~="border-amber-200"], [class~="border-amber-300"] { border-color: #e6d0a0 !important; }
+[class~="hover:bg-amber-700"]:hover { background-color: #80547f !important; }
+[class~="hover:bg-stone-100"]:hover, [class~="hover:bg-stone-200"]:hover { background-color: #f0e1f1 !important; }
