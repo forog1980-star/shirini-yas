@@ -218,3 +218,51 @@ Run شماره `41196186436` پس از push به main اجرا شد:
 
 ### ۱۴-۸. دامنه تغییرات این نوبت
 این نوبت به تکمیل مستندات و ثبت نقطه شروع ادامه کار محدود است. کد برنامه، تصاویر، workflow، تنظیمات GitHub Pages، main و Supabase تغییر نکرده‌اند.
+
+
+---
+
+## ۱۵. اصلاح مسیر دارایی‌های تصویری بین Vercel و GitHub Pages — ۱۴۰۵/۰۸/۰۹
+
+### ۱۵-۱. مبنا و Recovery Point
+نسخه Vercel با commit `1974304d86542991ccd4915d1e7ea1c1aab3e803` به‌عنوان مبنای بصری مورد تأیید مالک انتخاب شد. شاخه PR شماره ۳ در commit `47bb91d4daf6536df65daca631e9887f85f8996c` شامل اصلاحات سند رسمی و مسیر لوگو/آواتار بود و ۲۳ commit جلوتر از commit نسخه Vercel قرار داشت.
+پیش از اصلاح، شاخه کاری `fix/yas-gallery-paths-20261031` و Recovery Point مستقل `backup/pre-yas-gallery-path-fix-20261031` از SHA فوق ایجاد شدند. GitHub Compare، Recovery Point را با مبنا identical و شاخه کاری را در شروع identical نشان داد.
+
+### ۱۵-۲. علت فنی و راهکار
+پیکربندی قبلی Vite فقط base زیرمسیر `/shirini-yas/` را برای GitHub Pages داشت. نسخه Vercel در ریشه دامنه اجرا می‌شود؛ بنابراین base ثابت Pages با مسیرهای ریشه‌ای Vercel سازگار نبود. راهکار محدود، انتخاب base بر اساس محیط build است:
+- Vercel: `/` (با متغیر محیطی `VERCEL=1`)
+- GitHub Pages: `/shirini-yas/`
+
+### ۱۵-۳. فایل‌های تغییرکرده
+| فایل | اصلاح |
+|---|---|
+| `vite.config.ts` | base شرطی Vercel/Pages |
+| `index.html` | مسیر favicon با `%BASE_URL%` |
+| `src/components/ScreenshotsShowcaseModal.tsx` | چهار مسیر SVG با `import.meta.env.BASE_URL` |
+| `public/screenshots.html` | مسیر نسبی تصاویر و لینک‌های دانلود |
+
+هیچ تغییری در ساختار ویترین، داده‌های محصول، فایل‌های تصویر یا مؤلفه‌های سفارش انجام نشد. مسیر لوگو و آواتار که در شاخه قبلی با `BASE_URL` اصلاح شده بودند حفظ شدند.
+
+### ۱۵-۴. بررسی پس از تغییر
+- GitHub Compare نسبت به HEAD قبلی شاخه کاری، دقیقاً ۴ فایل فوق را گزارش کرد.
+- درخت مخزن ۵۶ ورودی دارد و هر چهار PNG و چهار SVG گالری در مسیر `public/screenshots/` موجودند.
+- حجم فایل‌های تصویری در مقایسه با مبنا تغییری نکرده است.
+- ارجاع‌های گالری در React به `BASE_URL` متصل شده‌اند؛ صفحه HTML مستقل از مسیر نسبی استفاده می‌کند.
+- favicon نیز از placeholder استاندارد Vite استفاده می‌کند.
+- Recovery Point مستقل دست‌نخورده باقی مانده است.
+
+### ۱۵-۵. نتیجه استقرار و محدودیت آزمون
+برای commit `1e4b2e59b7f15d0e836562147f8ca486a034d080`، Vercel deployment با شناسه `dpl_2hCJVGBqwK19i1afsYU6XQGgM9is` و وضعیت `READY` ثبت شد. هر دو commit status با contextهای `Vercel – shirini-yas` و `Vercel – shirini-yas-ju72` موفق و دارای توضیح «Deployment has completed» هستند.
+نشانی Preview:
+`https://shirini-yas-ju72-gzwlwzuqq-forog1980-8339.vercel.app/`
+
+**محدودیت:** درخواست محتوای deployment از ابزار Vercel با HTTP 403 رد شد و ابزار مرور وب نیز این میزبان را باز نکرد. محیط محلی به GitHub دسترسی DNS نداشت. ازاین‌رو اجرای محلی `npm ci`، `npm run lint` و `npm run build` و تست دیداری دسکتاپ/موبایل انجام نشده است. وضعیت READY استقرار را تأیید می‌کند، نه نمایش بصری همه تصاویر. این موارد باید توسط مالک در Preview بازبینی شوند.
+
+### ۱۵-۶. موارد باز
+1. تأیید دیداری لوگو، گالری چهارصفحه‌ای و نمایش در موبایل/دسکتاپ در Preview.
+2. تست مستقل مسیرهای زیرمسیر GitHub Pages پس از انتشار مجاز در `main`.
+3. دریافت عکس واقعی و تأییدشده محصولات یاس و انتقال آن‌ها به `public/assets/products/`; تا آن زمان تصاویر نمونه Unsplash باقی می‌مانند.
+4. اجرای `npm run lint` و آزمون‌های محلی/مرورگر در محیط دارای دسترسی به مخزن.
+5. بازبینی PR و عدم ادغام در `main` تا تأیید صریح مالک.
+
+هیچ تغییری در `main`، Supabase یا داده‌های آن انجام نشده است.
