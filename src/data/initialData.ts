@@ -207,9 +207,9 @@ export const sampleOrderHistory = [
       }
     ],
     delivery: {
-      recipientName: 'سارا کاظمی',
-      phone: '۰۹۳۵۹۸۷۶۵۴۳',
-      address: 'تهران، خیابان پاسداران، بوستان پنجم، پلاک ۱۲',
+      recipientName: 'مشتری نمونه',
+      phone: '—',
+      address: 'نشانی نمونه ثبت نشده است',
       deliveryDate: 'فردا شنبه',
       deliveryTimeSlot: '۱۷:۰۰ الی ۲۰:۰۰',
       deliveryMethod: 'courier' as const,
