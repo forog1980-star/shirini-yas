@@ -309,7 +309,7 @@ export default function App() {
         phoneNumber: updatedOrder.delivery.phone,
         timestamp: nowTime,
         type: 'status_update',
-        message: `سفارش #${updatedOrder.orderNumber}: ${newStatusLabel}. پیگیری بیشتر در سامانه شیرین‌بانو.`,
+        message: `سفارش #${updatedOrder.orderNumber}: ${newStatusLabel}. پیگیری بیشتر در سامانه شیرینی یاس.`,
       };
       setSmsNotifications([statusSms]);
     }
@@ -396,7 +396,7 @@ export default function App() {
             </div>
 
             {/* Search & Category Filter Section */}
-            <div className="space-y-4">
+            <div id="yas-products" className="space-y-4">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                 {/* Search Bar */}
                 <div className="relative flex-1 max-w-md">
@@ -493,13 +493,7 @@ export default function App() {
                   <MessageCircle className="w-4 h-4" />
                   <span>گفتگوی متنی با سحر</span>
                 </button>
-                <a
-                  href={`tel:${bakerProfile.phone}`}
-                  className="p-3 bg-stone-100 hover:bg-stone-200 text-stone-700 rounded-2xl transition-colors"
-                  title="تماس تلفنی"
-                >
-                  <PhoneCall className="w-4 h-4" />
-                </a>
+                
               </div>
             </div>
           </div>
