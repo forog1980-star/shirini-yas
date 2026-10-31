@@ -34,7 +34,7 @@ export const ScreenshotsShowcaseModal: React.FC<ScreenshotsShowcaseModalProps> =
       title: '۱. صفحه اصلی و ویترین قنادی یاس',
       badge: 'ویترین خریدار',
       desc: 'مشاهده آلبوم تصاویر باکیفیت هر شیرینی، قیمت هر کیلوگرم به تومان، دسته‌بندی‌ها (شیرینی تر، خشک، سنتی، کیک) و حداقل زمان پخت.',
-      image: '/screenshots/screen1_storefront.svg',
+      image: `${import.meta.env.BASE_URL}screenshots/screen1_storefront.svg`,
       downloadName: 'yas-storefront.svg',
       highlights: [
         'آلبوم عکس اختصاصی با امکان ورق زدن عکس‌ها',
@@ -47,7 +47,7 @@ export const ScreenshotsShowcaseModal: React.FC<ScreenshotsShowcaseModalProps> =
       title: '۲. زمان‌بندی هوشمند پخت و تحویل',
       badge: 'جلوگیری از تداخل کارگاه',
       desc: 'محاسبه خودکار لیدتایم و قفل کردن روزهای غیرممکن؛ مشتری روز تحویل و بازه ساعتی دلخواه (صبح، ظهر، عصر) را انتخاب می‌کند.',
-      image: '/screenshots/screen2_scheduling.svg',
+      image: `${import.meta.env.BASE_URL}screenshots/screen2_scheduling.svg`,
       downloadName: 'yas-scheduling.svg',
       highlights: [
         'تقویم انتخاب روز (فردا عصر، پس‌فردا صبح، آخر هفته)',
@@ -60,7 +60,7 @@ export const ScreenshotsShowcaseModal: React.FC<ScreenshotsShowcaseModalProps> =
       title: '۳. درگاه پرداخت شاپرک و ارسال پیامک دوطرفه',
       badge: 'مالی و اطلاع‌رسانی آنی',
       desc: 'شبیه‌ساز پرداخت شتاب و صدور کد رهگیری؛ ارسال همزمان پیامک برای خریدار و هشدار فوری سفارش جدید برای مدیر یاس.',
-      image: '/screenshots/screen3_payment_sms.svg',
+      image: `${import.meta.env.BASE_URL}screenshots/screen3_payment_sms.svg`,
       downloadName: 'yas-payment-sms.svg',
       highlights: [
         'پرداخت آنلاین با رمز پویا یا کارت‌به‌کارت با ثبت فیش',
@@ -73,7 +73,7 @@ export const ScreenshotsShowcaseModal: React.FC<ScreenshotsShowcaseModalProps> =
       title: '۴. پنل مدیریت کارگاه و وضعیت فرها',
       badge: 'مخصوص مدیر شیرینی یاس',
       desc: 'کنترل ظرفیت روزانه فر، تغییر مراحل پخت هر سفارش (خمیرگیری، درون فر، تزیین، تحویل پیک)، معرفی شیرینی جدید و چت.',
-      image: '/screenshots/screen4_baker_admin.svg',
+      image: `${import.meta.env.BASE_URL}screenshots/screen4_baker_admin.svg`,
       downloadName: 'yas-admin-panel.svg',
       highlights: [
         'کلید سوییچ ظرفیت روزانه پذیرش سفارش',
