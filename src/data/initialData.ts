@@ -4,7 +4,7 @@ export const initialBakerProfile: BakerProfile = {
   name: 'سحر',
   brandName: 'کارگاه شیرینی خانگی یاس',
   bio: 'شیرینی‌ها و کیک‌های خانگی یاس؛ با امکان انتخاب وزن، طعم و توضیحات دلخواه برای سفارش.',
-  avatar: '/assets/aistudio/photo_2026-10-11_20-52-21_08dc8782.jpg',
+  avatar: `${import.meta.env.BASE_URL}assets/aistudio/photo_2026-10-11_20-52-21_08dc8782.jpg`,
   phone: '',
   address: '',
   workingHours: 'همه روزه از ساعت ۸:۰۰ تا ۲۱:۰۰ (پاسخگویی و ارسال سفارش)',
