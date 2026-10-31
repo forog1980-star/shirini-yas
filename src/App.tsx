@@ -86,7 +86,7 @@ export default function App() {
     {
       id: 'm1',
       sender: 'baker',
-      text: 'سلام و درود! مریم سعادتی هستم از کارگاه شیرین‌بانو. برای سفارش شیرینی‌های تازه و انتخاب طعم دلخواه‌تون در خدمتم.',
+      text: 'سلام و درود! سحر هستم از شیرینی یاس. برای سفارش شیرینی‌های تازه و انتخاب طعم دلخواه‌تون در خدمتم.',
       timestamp: '۱۰:۱۵',
       read: true,
     },
@@ -309,7 +309,7 @@ export default function App() {
         phoneNumber: updatedOrder.delivery.phone,
         timestamp: nowTime,
         type: 'status_update',
-        message: `سفارش #${updatedOrder.orderNumber}: ${newStatusLabel}. پیگیری بیشتر در سامانه شیرین‌بانو.`,
+        message: `سفارش #${updatedOrder.orderNumber}: ${newStatusLabel}. پیگیری بیشتر در سامانه شیرینی یاس.`,
       };
       setSmsNotifications([statusSms]);
     }
@@ -357,89 +357,46 @@ export default function App() {
           /* CUSTOMER STOREFRONT VIEW */
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-8">
             {/* Hero Storefront Banner */}
-            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-r from-stone-900 via-amber-950 to-stone-900 text-white p-6 sm:p-10 shadow-lg border border-amber-900/40">
-              <div className="relative z-10 max-w-2xl space-y-4">
-                <div className="inline-flex items-center gap-2 bg-amber-500/20 text-amber-300 border border-amber-400/30 px-3 py-1 rounded-full text-xs font-bold">
-                  <Sparkles className="w-3.5 h-3.5" />
-                  <span>پخت تازه به سفارش شما | مواد درجه یک محلی</span>
-                </div>
-
-                <h1 className="text-2xl sm:text-4xl font-black leading-tight text-amber-50">
-                  شیرینی خانگی واقعی، با عطر کره طبیعی و پسته تازه
+            <section className="relative overflow-hidden rounded-[2rem] border border-[#ead8eb] bg-gradient-to-br from-[#fff7fb] via-[#f7edf8] to-[#fff9ed] px-6 py-9 sm:px-10 sm:py-12 shadow-sm">
+              <div className="relative z-10 mx-auto max-w-3xl space-y-5 text-center">
+                <span className="inline-flex items-center gap-2 rounded-full border border-[#e7c9dc] bg-white/80 px-4 py-2 text-xs font-bold text-[#a66b91]">
+                  <Sparkles className="h-4 w-4 text-[#c59b4c]" />
+                  شیرینی‌های خانگی یاس
+                </span>
+                <h1 className="text-3xl font-black leading-relaxed text-[#79527e] sm:text-5xl">
+                  لحظه‌های شیرین، با عطر خانه
                 </h1>
-
-                <p className="text-stone-300 text-xs sm:text-sm leading-relaxed max-w-xl">
-                  {bakerProfile.bio}
+                <p className="mx-auto max-w-xl text-sm leading-8 text-[#987b98] sm:text-base">
+                  از شیرینی‌های تر و خامه‌ای تا شیرینی خشک و کیک‌های مناسبتی؛ انتخابی دلنشین برای دورهمی‌ها و جشن‌های شما.
                 </p>
-
-                {/* Trust Badges */}
-                <div className="flex flex-wrap items-center gap-3 pt-2 text-xs">
-                  <div className="flex items-center gap-1.5 bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/10">
-                    <Clock className="w-4 h-4 text-amber-400" />
-                    <span>زمان‌بندی دقیق پخت و تحویل</span>
-                  </div>
-                  <div className="flex items-center gap-1.5 bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/10">
-                    <Truck className="w-4 h-4 text-emerald-400" />
-                    <span>پیک مخصوص با محفظه خنک</span>
-                  </div>
-                  <div className="flex items-center gap-1.5 bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/10">
-                    <MessageCircle className="w-4 h-4 text-sky-400" />
-                    <span>مشاوره و چت مستقیم با قناد</span>
-                  </div>
-                </div>
+                <button
+                  onClick={() => { setSelectedCategory('all'); document.getElementById('yas-products')?.scrollIntoView({ behavior: 'smooth' }); }}
+                  className="inline-flex items-center justify-center rounded-2xl bg-[#80547f] px-7 py-3 text-sm font-bold text-white shadow-md transition hover:bg-[#70466f]"
+                >
+                  مشاهده شیرینی‌ها
+                </button>
               </div>
+              <div className="pointer-events-none absolute -left-10 -top-12 h-48 w-48 rounded-full bg-[#f3dce9]/70 blur-2xl" />
+              <div className="pointer-events-none absolute -bottom-16 -right-8 h-56 w-56 rounded-full bg-[#f2e3bd]/60 blur-2xl" />
+            </section>
 
-              {/* Decorative Subtle Bakery Elements */}
-              <div className="absolute left-6 bottom-4 opacity-15 hidden md:block pointer-events-none">
-                <Cake className="w-64 h-64 text-amber-300" />
-              </div>
-            </div>
-
-            {/* Quick Process Steps (مثل ورود به یک قنادی دلنشین) */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-white p-4 rounded-3xl border border-stone-200/90 shadow-2xs">
-              <div className="flex items-center gap-3 p-2">
-                <div className="w-9 h-9 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center shrink-0 font-bold text-xs">
-                  ۱
+            {/* A simple, honest ordering guide */}
+            <div className="grid grid-cols-2 gap-3 rounded-3xl border border-[#eee1ef] bg-white/90 p-4 shadow-sm sm:grid-cols-4">
+              {[
+                ['۱', 'مشاهده آلبوم', 'انتخاب شیرینی دلخواه'],
+                ['۲', 'انتخاب وزن و سلیقه', 'ثبت توضیحات سفارش'],
+                ['۳', 'زمان تحویل', 'هماهنگی زمان آماده‌سازی'],
+                ['۴', 'ثبت سفارش', 'بررسی جزئیات سفارش'],
+              ].map(([number, title, detail]) => (
+                <div key={number} className="flex items-center gap-3 rounded-2xl bg-[#fcf7fb] p-3">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-2xl bg-[#f0e1f1] text-sm font-black text-[#80547f]">{number}</span>
+                  <span><span className="block text-xs font-bold text-[#80547f]">{title}</span><span className="mt-1 block text-[10px] text-[#a18ba0]">{detail}</span></span>
                 </div>
-                <div>
-                  <div className="font-bold text-xs text-stone-900">مشاهده آلبوم و قیمت</div>
-                  <div className="text-[10px] text-stone-500">عکس باکیفیت و نرخ هر کیلو</div>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-3 p-2">
-                <div className="w-9 h-9 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center shrink-0 font-bold text-xs">
-                  ۲
-                </div>
-                <div>
-                  <div className="font-bold text-xs text-stone-900">انتخاب مقدار و سلیقه</div>
-                  <div className="text-[10px] text-stone-500">وزن دلخواه و یادداشت تزئین</div>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-3 p-2">
-                <div className="w-9 h-9 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center shrink-0 font-bold text-xs">
-                  ۳
-                </div>
-                <div>
-                  <div className="font-bold text-xs text-stone-900">زمان‌بندی تحویل</div>
-                  <div className="text-[10px] text-stone-500">انتخاب روز و ساعت مدنظر</div>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-3 p-2">
-                <div className="w-9 h-9 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0 font-bold text-xs">
-                  ۴
-                </div>
-                <div>
-                  <div className="font-bold text-xs text-stone-900">پرداخت و پیامک آنی</div>
-                  <div className="text-[10px] text-stone-500">پیامک همزمان خریدار و قناد</div>
-                </div>
-              </div>
+              ))}
             </div>
 
             {/* Search & Category Filter Section */}
-            <div className="space-y-4">
+            <div id="yas-products" className="space-y-4">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                 {/* Search Bar */}
                 <div className="relative flex-1 max-w-md">
@@ -523,7 +480,7 @@ export default function App() {
                     سوالی درباره طعم، وزن یا مراسم خاصی دارید؟
                   </h3>
                   <p className="text-xs text-stone-500 mt-1 max-w-lg leading-relaxed">
-                    مستقیماً با من در چت متنی صحبت کنید. برای انواع کیک‌های سفارشی، جشن عقد، تولد و پذیرایی شرکتی مشاوره دریافت کنید.
+                    برای سفارش با طعم، وزن و تزیین دلخواه، پیام خود را برای سحر بفرستید.
                   </p>
                 </div>
               </div>
@@ -534,15 +491,9 @@ export default function App() {
                   className="flex-1 md:flex-initial px-5 py-3 bg-amber-600 hover:bg-amber-700 text-white rounded-2xl text-xs font-bold flex items-center justify-center gap-2 shadow-sm transition-all"
                 >
                   <MessageCircle className="w-4 h-4" />
-                  <span>گفتگوی متنی با مریم سعادتی</span>
+                  <span>گفتگوی متنی با سحر</span>
                 </button>
-                <a
-                  href={`tel:${bakerProfile.phone}`}
-                  className="p-3 bg-stone-100 hover:bg-stone-200 text-stone-700 rounded-2xl transition-colors"
-                  title="تماس تلفنی"
-                >
-                  <PhoneCall className="w-4 h-4" />
-                </a>
+                
               </div>
             </div>
           </div>
