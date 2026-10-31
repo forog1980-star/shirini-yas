@@ -32,3 +32,23 @@
 .pulse-glow {
   animation: pulseGlow 3s ease-in-out infinite;
 }
+
+
+/* Yas pastel lilac, rose and soft-gold storefront palette */
+:root {
+  color-scheme: light;
+  --yas-lilac: #80547f;
+  --yas-lilac-soft: #f0e1f1;
+  --yas-rose: #d98eae;
+  --yas-gold: #d9b96e;
+  --yas-cream: #fffafd;
+}
+html, body, #root {
+  background: #fffafd;
+  color: #795d79;
+}
+body {
+  background-image: radial-gradient(circle at 8% 5%, rgba(243, 220, 235, .42), transparent 28rem);
+}
+::-webkit-scrollbar-track { background: #fbf4fa; }
+::-webkit-scrollbar-thumb { background: #d8bfd8; }
