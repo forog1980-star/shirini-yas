@@ -41,7 +41,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         )}
         <span className="flex flex-col items-start">
           <span className="text-xl sm:text-2xl font-black tracking-tight text-[#80547f]">شیرینی یاس <span className="text-sm font-bold text-[#c27d9f]">خانگی</span></span>
-          <span className="text-[11px] sm:text-xs text-[#9b7897]">کارگاه پخت شیرینی به‌گونه خانگی</span>
+          <span className="text-[11px] sm:text-xs text-[#9b7897]">کارگاه پخت شیرینی به‌صورت خانگی</span>
         </span>
       </button>
 
