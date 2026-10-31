@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" width="720" height="540" style="background:#FAF7F2; font-family:'Vazirmatn', Tahoma, sans-serif;">
+  <defs>
+    <linearGradient id="adminTopGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1c1917" />
+      <stop offset="60%" stop-color="#292524" />
+      <stop offset="100%" stop-color="#451a03" />
+    </linearGradient>
+    <filter id="shadow4" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Desktop / Tablet Frame -->
+  <rect x="5" y="5" width="710" height="530" rx="24" fill="#ffffff" stroke="#e7e5e4" stroke-width="2" />
+  
+  <!-- Browser top bar -->
+  <rect x="5" y="5" width="710" height="34" rx="24" fill="#f5f5f4" />
+  <circle cx="28" cy="22" r="5" fill="#f87171" />
+  <circle cx="44" cy="22" r="5" fill="#fbbf24" />
+  <circle cx="60" cy="22" r="5" fill="#4ade80" />
+  <rect x="180" y="12" width="360" height="20" rx="6" fill="#ffffff" stroke="#e7e5e4" />
+  <text x="360" y="26" font-size="10" font-family="monospace" fill="#78716c" text-anchor="middle">https://shirini-yas.ir/admin/workshop</text>
+
+  <!-- Top Hero Banner with Capacity Switcher -->
+  <g transform="translate(20, 50)">
+    <rect x="0" y="0" width="680" height="70" rx="18" fill="url(#adminTopGrad)" />
+    
+    <circle cx="640" cy="35" r="22" fill="#d97706" />
+    <text x="640" y="43" font-size="24" text-anchor="middle">👩‍🍳</text>
+    
+    <text x="605" y="32" font-size="15" font-weight="900" fill="#ffffff" text-anchor="end">کارگاه شیرینی خانگی یاس (پنل مدیریت)</text>
+    <rect x="365" y="16" width="105" height="18" rx="6" fill="#f59e0b" fill-opacity="0.2" stroke="#f59e0b" stroke-opacity="0.4" />
+    <text x="417" y="29" font-size="9" font-weight="bold" fill="#fcd34d" text-anchor="middle">وضعیت بهداشتی: تایید شده ✓</text>
+    <text x="605" y="52" font-size="11" fill="#d6d3d1" text-anchor="end">مدیریت: سرکار خانم سعادتی | ظرفیت فر: ۴ سینی همزمان</text>
+
+    <!-- Daily Capacity Switcher -->
+    <g transform="translate(20, 15)">
+      <rect x="0" y="0" width="220" height="40" rx="12" fill="#1c1917" stroke="#44403c" />
+      <text x="210" y="18" font-size="10" font-weight="bold" fill="#f5f5f4" text-anchor="end">ظرفیت پذیرش سفارش آنلاین:</text>
+      <text x="210" y="32" font-size="9" fill="#34d399" text-anchor="end">پذیرش فعال (فر آماده پخت است)</text>
+      <!-- Toggle button -->
+      <rect x="15" y="11" width="36" height="18" rx="9" fill="#10b981" />
+      <circle cx="41" cy="20" r="7" fill="#ffffff" />
+    </g>
+  </g>
+
+  <!-- 4 KPI Metrics Cards -->
+  <g transform="translate(20, 130)">
+    <!-- KPI 1 -->
+    <g transform="translate(515, 0)">
+      <rect x="0" y="0" width="165" height="65" rx="14" fill="#ffffff" stroke="#e7e5e4" filter="url(#shadow4)" />
+      <text x="150" y="20" font-size="10" fill="#78716c" text-anchor="end">درآمد کل سفارشات:</text>
+      <text x="20" y="20" font-size="14">💰</text>
+      <text x="150" y="44" font-size="15" font-weight="900" fill="#047857" text-anchor="end">۱,۲۴۰,۰۰۰ تومان</text>
+      <text x="150" y="57" font-size="8" fill="#10b981" text-anchor="end">تسویه درگاه شاپرک</text>
+    </g>
+
+    <!-- KPI 2 -->
+    <g transform="translate(345, 0)">
+      <rect x="0" y="0" width="155" height="65" rx="14" fill="#ffffff" stroke="#e7e5e4" filter="url(#shadow4)" />
+      <text x="140" y="20" font-size="10" fill="#78716c" text-anchor="end">سفارش‌های در حال انجام:</text>
+      <text x="20" y="20" font-size="14">🔥</text>
+      <text x="140" y="44" font-size="16" font-weight="900" fill="#b45309" text-anchor="end">۲ سفارش فعال</text>
+      <text x="140" y="57" font-size="8" fill="#d97706" text-anchor="end">در صف پخت فر کارگاه</text>
+    </g>
+
+    <!-- KPI 3 -->
+    <g transform="translate(175, 0)">
+      <rect x="0" y="0" width="155" height="65" rx="14" fill="#ffffff" stroke="#e7e5e4" filter="url(#shadow4)" />
+      <text x="140" y="20" font-size="10" fill="#78716c" text-anchor="end">تنوع شیرینی‌های ویترین:</text>
+      <text x="20" y="20" font-size="14">🍰</text>
+      <text x="140" y="44" font-size="16" font-weight="900" fill="#1c1917" text-anchor="end">۸ محصول</text>
+      <text x="140" y="57" font-size="8" fill="#78716c" text-anchor="end">با آلبوم عکس و قیمت</text>
+    </g>
+
+    <!-- KPI 4 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="160" height="65" rx="14" fill="#ffffff" stroke="#e7e5e4" filter="url(#shadow4)" />
+      <text x="145" y="20" font-size="10" fill="#78716c" text-anchor="end">گفتگوی متنی با خریدار:</text>
+      <text x="20" y="20" font-size="14">💬</text>
+      <text x="145" y="44" font-size="16" font-weight="900" fill="#2563eb" text-anchor="end">۴ پیام فعال</text>
+      <text x="145" y="57" font-size="8" fill="#3b82f6" text-anchor="end">مشاوره طعم و سفارش</text>
+    </g>
+  </g>
+
+  <!-- Main Active Order Card with Stages -->
+  <g transform="translate(20, 210)">
+    <rect x="0" y="0" width="680" height="230" rx="18" fill="#ffffff" stroke="#e7e5e4" filter="url(#shadow4)" />
+    
+    <!-- Order Header -->
+    <text x="660" y="28" font-size="13" font-weight="900" fill="#1c1917" text-anchor="end">سفارش فعال #SH-8491</text>
+    <rect x="495" y="14" width="75" height="20" rx="6" fill="#d1fae5" stroke="#a7f3d0" />
+    <text x="532" y="28" font-size="9" font-weight="bold" fill="#065f46" text-anchor="middle">پرداخت شده ✓</text>
+    <text x="470" y="28" font-size="10" fill="#78716c" text-anchor="end">کد رهگیری: TRK-9832711</text>
+    <text x="25" y="28" font-size="13" font-weight="900" fill="#78350f">مبلغ کل: ۴۰۰,۰۰۰ تومان</text>
+    <line x1="20" y1="42" x2="660" y2="42" stroke="#f5f5f4" stroke-width="1.5" />
+
+    <!-- Items & Customer Info -->
+    <g transform="translate(360, 52)">
+      <text x="300" y="16" font-size="11" font-weight="bold" fill="#1c1917" text-anchor="end">اقلام: ۱ کیلوگرم شیرینی تر نان‌خامه‌ای و اکلر</text>
+      <rect x="120" y="24" width="180" height="20" rx="5" fill="#fef3c7" stroke="#fde68a" />
+      <text x="290" y="38" font-size="9" font-weight="bold" fill="#92400e" text-anchor="end">سلیقه مشتری: لطفاً کم‌شیرین باشد.</text>
+      
+      <text x="300" y="64" font-size="11" fill="#44403c" text-anchor="end">👤 خریدار: علیرضا رضایی (۰۹۱۲۹۸۷۶۵۴۳)</text>
+      <text x="300" y="82" font-size="10" font-weight="bold" fill="#b45309" text-anchor="end">📅 موعد تحویل: فردا عصر (ساعت ۱۷:۰۰ الی ۲۰:۰۰)</text>
+      <text x="300" y="100" font-size="10" fill="#78716c" text-anchor="end">📍 نشانی: سعادت‌آباد، میدان کاج، خ سرو غربی، کوچه لادن، پ ۱۸</text>
+      <text x="300" y="118" font-size="10" fill="#047857" text-anchor="end">🛵 شیوه ارسال: پیک مخصوص خنک‌کننده (رایگان)</text>
+    </g>
+
+    <!-- Baking Stages Visualizer -->
+    <g transform="translate(20, 52)">
+      <rect x="0" y="0" width="310" height="155" rx="14" fill="#fafaf9" stroke="#e7e5e4" />
+      <text x="295" y="20" font-size="11" font-weight="bold" fill="#1c1917" text-anchor="end">مراحل زنده آماده‌سازی در کارگاه یاس:</text>
+
+      <!-- Stage 1 (Passed) -->
+      <circle cx="285" cy="42" r="10" fill="#16a34a" />
+      <text x="285" y="46" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">✓</text>
+      <text x="265" y="46" font-size="10" font-weight="bold" fill="#1c1917" text-anchor="end">۱. آماده‌سازی خمیر شو و استراحت</text>
+
+      <!-- Stage 2 (Current Active) -->
+      <circle cx="285" cy="74" r="10" fill="#d97706" />
+      <text x="285" y="78" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">♨️</text>
+      <text x="265" y="78" font-size="10" font-weight="900" fill="#b45309" text-anchor="end">۲. پخت در فر با حرارت ۱۸۰ درجه (هم‌اکنون)</text>
+
+      <!-- Stage 3 (Upcoming) -->
+      <circle cx="285" cy="106" r="10" fill="#e7e5e4" />
+      <text x="285" y="110" font-size="10" fill="#78716c" text-anchor="middle">۳</text>
+      <text x="265" y="110" font-size="10" fill="#78716c" text-anchor="end">۳. فیلینگ خامه و تزیین گاناش شکلاتی</text>
+
+      <!-- Stage 4 (Upcoming) -->
+      <circle cx="285" cy="138" r="10" fill="#e7e5e4" />
+      <text x="285" y="142" font-size="10" fill="#78716c" text-anchor="middle">۴</text>
+      <text x="265" y="142" font-size="10" fill="#78716c" text-anchor="end">۴. بسته‌بندی در جعبه روبان‌پیچ و تحویل پیک</text>
+    </g>
+  </g>
+
+  <!-- Bottom Action Bar -->
+  <g transform="translate(20, 455)">
+    <rect x="0" y="0" width="680" height="50" rx="14" fill="#f5f5f4" stroke="#e7e5e4" />
+    <text x="660" y="30" font-size="11" font-weight="bold" fill="#44403c" text-anchor="end">دستورات سریع مدیر کارگاه:</text>
+
+    <!-- Buttons -->
+    <rect x="360" y="10" width="145" height="30" rx="8" fill="#d97706" />
+    <text x="432" y="29" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">+ معرفی شیرینی جدید</text>
+
+    <rect x="200" y="10" width="145" height="30" rx="8" fill="#1c1917" />
+    <text x="272" y="29" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">گام بعد: پایان پخت فر ➔</text>
+
+    <rect x="40" y="10" width="145" height="30" rx="8" fill="#ffffff" stroke="#d1d5db" />
+    <text x="112" y="29" font-size="10" font-weight="bold" fill="#374151" text-anchor="middle">💬 پاسخ به پیام مشتری</text>
+  </g>
+</svg>

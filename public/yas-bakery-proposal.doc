@@ -1,0 +1,253 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+<meta charset="utf-8">
+<title>طرح‌نامه راهبردی و فنی راه‌اندازی سامانه سفارش آنلاین شیرینی یاس</title>
+<!--[if gte mso 9]>
+<xml>
+<w:WordDocument>
+<w:View>Print</w:View>
+<w:Zoom>100</w:Zoom>
+<w:DoNotOptimizeForBrowser/>
+</w:WordDocument>
+</xml>
+<![endif]-->
+<style>
+@page {
+    size: A4 portrait;
+    margin: 2.5cm 2.5cm 2.5cm 2.5cm;
+    mso-page-orientation: portrait;
+}
+body {
+    font-family: 'B Zar', 'Zar', 'Vazirmatn', Tahoma, sans-serif;
+    direction: rtl;
+    text-align: right;
+    font-size: 13pt;
+    line-height: 1.8;
+    color: #222222;
+    background-color: #ffffff;
+}
+h1 {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #78350f;
+    text-align: center;
+    border-bottom: 2pt solid #b45309;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+h2 {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #92400e;
+    border-right: 4pt solid #d97706;
+    padding-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #451a03;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+p {
+    margin-bottom: 12px;
+    text-align: justify;
+}
+ul, ol {
+    margin-bottom: 15px;
+    padding-right: 25px;
+}
+li {
+    margin-bottom: 8px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 11pt;
+}
+table, th, td {
+    border: 1px solid #d1d5db;
+}
+th {
+    background-color: #fef3c7;
+    color: #78350f;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+td {
+    padding: 8px 12px;
+    text-align: right;
+}
+.box-highlight {
+    background-color: #fffbeb;
+    border: 1px solid #fde68a;
+    border-right: 5px solid #d97706;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+.header-table {
+    border: none;
+    margin-bottom: 30px;
+}
+.header-table td {
+    border: none;
+    padding: 4px;
+}
+.footer-sign {
+    margin-top: 50px;
+    width: 100%;
+    border: none;
+}
+.footer-sign td {
+    border: none;
+    text-align: center;
+    width: 50%;
+}
+</style>
+</head>
+<body>
+
+<table class="header-table">
+    <tr>
+        <td style="width: 20%; text-align: right; vertical-align: middle;">
+            <img src="/assets/aistudio/photo_2026-10-11_20-52-21_08dc8782.jpg" alt="لوگوی شیرینی یاس" style="width: 75px; height: 75px; border-radius: 50%; border: 2px solid #b45309;" />
+        </td>
+        <td style="width: 50%; font-size: 11pt; vertical-align: middle;">
+            <strong>بسمه تعالی</strong><br>
+            <span style="font-size: 13pt; color: #78350f; font-weight: bold;">کارگاه شیرینی خانگی یاس</span>
+        </td>
+        <td style="width: 30%; text-align: left; font-size: 10pt; vertical-align: middle;">تاریخ: ۱۴۰۴/۰۸/۰۹<br>شماره سند: YAS-SPEC-01<br>پیوست: نسخه اولیه نرم‌افزار</td>
+    </tr>
+</table>
+
+<h1>طرح‌نامه اجرایی و فنی راه‌اندازی سامانه سفارش آنلاین «شیرینی یاس»</h1>
+
+<div class="box-highlight">
+    <strong>خلاصه مدیریتی:</strong><br>
+    این سند با هدف تبیین سازوکار توسعه، استقرار، زیرساخت سرور و فرآیند سفارش‌گیری آنلاین برای کسب‌وکار خانگی و کارگاهی «شیرینی یاس» تنظیم شده است. هدف اصلی این طرح، ایجاد ساده‌ترین و صمیمی‌ترین تجربه خرید برای مشتری، حفظ کیفیت پخت روزانه و اتوماسیون کامل سفارش‌گیری و مالی بدون نیاز به پاسخگویی دستی مداوم است.
+</div>
+
+<h2>۱. هویت برند و چشم‌انداز کسب‌وکار «شیرینی یاس»</h2>
+<p>
+شیرینی یاس به عنوان یک تولیدکننده خانگی و کارگاهی شیرینی‌های تر، خشک، سنتی و کیک‌های مناسبتی، دارای ارزش‌های بنیادین زیر است:
+</p>
+<ul>
+    <li><strong>تازگی ۱۰۰٪ و پخت به سفارش:</strong> هیچ محصولی از قبل در یخچال نمی‌ماند؛ تمامی اقلام پس از ثبت قطعی سفارش پخته و خنک‌سازی می‌شوند.</li>
+    <li><strong>مواد اولیه اصیل و سالم:</strong> بهره‌گیری از کره طبیعی حیوانی، زعفران اعلای قائنات، هل سبز و پسته سبز تازه، بدون هرگونه اسانس سنتتیک و مواد نگهدارنده.</li>
+    <li><strong>ارتباط دوسویه و احترام به سلیقه خریدار:</strong> امکان تعیین میزان شکر، متن تبریک روی پلاک شکلاتی و چت مستقیم با قناد.</li>
+</ul>
+
+<h2>۲. معماری و جریان گام‌به‌گام خرید (Customer Journey)</h2>
+<p>
+رابط کاربری با الهام از ورود یک مشتری به یک قنادی لوکس و دنج طراحی شده و در ۴ گام بسیار سرراست خلاصه شده است:
+</p>
+<table>
+    <tr>
+        <th>مرحله</th>
+        <th>اقدام خریدار</th>
+        <th>عملیات هوشمند سیستم</th>
+    </tr>
+    <tr>
+        <td><strong>گام اول: ویترین و آلبوم</strong></td>
+        <td>مشاهده تصاویر باکیفیت، مطالعه ترکیبات، ماندگاری و قیمت شفاف هر کیلوگرم.</td>
+        <td>نمایش برچسب حداقل زمان مورد نیاز پخت (مثلاً حداقل ۱۸ ساعت قبل).</td>
+    </tr>
+    <tr>
+        <td><strong>گام دوم: انتخاب مقدار</strong></td>
+        <td>تعیین وزن (نیم کیلو، ۱ کیلو و...) و درج سلیقه خاص (کم‌شیرین، متن کیک).</td>
+        <td>محاسبه خودکار قیمت بر اساس وزن و افزودن به سبد خرید بدون پیچیدگی.</td>
+    </tr>
+    <tr>
+        <td><strong>گام سوم: زمان‌بندی تحویل</strong></td>
+        <td>انتخاب روز (فردا عصر، پس‌فردا صبح، آخر هفته) و بازه ساعتی دلخواه.</td>
+        <td>قفل کردن روزهایی که قبل از حداقل زمان پخت باشند جهت جلوگیری از تداخل کاری فر.</td>
+    </tr>
+    <tr>
+        <td><strong>گام چهارم: تسویه و پیامک</strong></td>
+        <td>پرداخت از طریق درگاه امن شاپرک یا کارت‌به‌کارت با ثبت فیش.</td>
+        <td>ارسال همزمان دو پیامک رسمی: یکی برای خریدار و دیگری برای مدیریت کارگاه یاس.</td>
+    </tr>
+</table>
+
+<h2>۳. سازوکار زمان‌بندی و فرمول محاسبه لیدتایم (Lead-time) پخت</h2>
+<p>
+بزرگ‌ترین خطای فروشگاه‌های آنلاین معمولی در فروش شیرینی خانگی، فرض بر آماده بودن محصول است. در شیرینی یاس، سیستم دارای هوش زمان‌بندی زیر است:
+</p>
+<ul>
+    <li><strong>شیرینی تر و نان‌خامه‌ای:</strong> نیازمند ۱۸ ساعت زمان استراحت خمیر و فرم‌گیری خامه.</li>
+    <li><strong>کیک‌های تولد و چیزکیک:</strong> نیازمند ۲۴ تا ۳۶ ساعت جهت استراحت شبانه و ایستایی فیلینگ.</li>
+    <li><strong>کنترل سقف ظرفیت روزانه فر:</strong> در پنل مدیریت، کلیدی برای مدیر قرار داده شده تا در روزهای پرترافیک با یک کلیک ظرفیت را موقتاً تکمیل اعلام کند تا کیفیت شیرینی افت نکند.</li>
+</ul>
+
+<h2>۴. زیرساخت پرداخت آنلاین و وب‌سرویس پیامکی دوطرفه</h2>
+<div class="box-highlight">
+    <strong>چرا درگاه واسط و سرور ایران؟</strong><br>
+    درگاه‌های پرداختی مانند زرین‌پال یا زیبال امکان اتصال سریع با تسویه حساب روزانه به شماره شبا یا کارت مدیر شیرینی یاس را فراهم می‌کنند.
+</div>
+<h3>متن پیامک‌های همزمان سیستم:</h3>
+<ol>
+    <li>
+        <strong>پیامک به خریدار (بلافاصله پس از پرداخت):</strong><br>
+        <em>«خریدار گرامی [نام]، پرداخت سفارش شما به مبلغ [مبلغ] تومان با موفقیت تایید شد. شیرینی شما در نوبت پخت قرار گرفت و در تاریخ [تاریخ تحویل] ارسال می‌گردد. کد پیگیری: [کد] - کارگاه شیرینی یاس»</em>
+    </li>
+    <li>
+        <strong>پیامک فوری به مدیریت شیرینی یاس:</strong><br>
+        <em>«سفارش جدید دریافت شد! مبلغ [مبلغ] تومان واریز شد. اقلام: [خلاصه اقلام]. زمان تحویل: [تاریخ و ساعت]. لطفاً در پنل کارگاه نوبت پخت فر را تایید فرمایید.»</em>
+    </li>
+</ol>
+
+<h2>۵. تصمیم‌گیری در خصوص هاستینگ، سرور، گیت‌هاب و دامنه</h2>
+<table>
+    <tr>
+        <th>مولفه</th>
+        <th>توصیه فنی</th>
+        <th>دلایل و مزایا برای شیرینی یاس</th>
+    </tr>
+    <tr>
+        <td><strong>سرور و هاست</strong></td>
+        <td>هاست لینوکس ابری با IP ایران (ابر آروان، پارس‌پک یا هاست‌ایران)</td>
+        <td>پایداری ۱۰۰٪ در زمان اختلالات اینترنت، اتصال بدون قطعی به درگاه بانکی شاپرک، سرعت لود بالا برای کاربران داخل کشور.</td>
+    </tr>
+    <tr>
+        <td><strong>مخزن گیت‌هاب</strong></td>
+        <td>GitHub Private Repository</td>
+        <td>بکاپ امن سورس‌کد، نگهداری تاریخچه ویرایش‌ها و امکان تحویل استاندارد به هر برنامه‌نویس دیگر.</td>
+    </tr>
+    <tr>
+        <td><strong>دامنه اینترنتی</strong></td>
+        <td>دامنه ملی .ir (مانند shirini-yas.ir)</td>
+        <td>هزینه فوق‌العاده اندک سالانه (۳۰ تا ۵۰ هزار تومان)، برندینگ رسمی و امکان اتصال آسان به اینماد در صورت نیاز.</td>
+    </tr>
+    <tr>
+        <td><strong>اپلیکیشن موبایل</strong></td>
+        <td>فناوری وب‌اپلیکیشن پیش‌رونده (PWA)</td>
+        <td>عدم نیاز به پرداخت هزینه یا تاییدیه کافه‌بازار و سیب‌اپ؛ مشتری با زدن دکمه Add to Home Screen آیکون یاس را روی گوشی نصب می‌کند.</td>
+    </tr>
+</table>
+
+<h2>۶. مراحل تحویل و توسعه آتی</h2>
+<p>
+نسخه اولیه هم‌اکنون به صورت کامل ساخته شده و از طریق لینک اختصاصی قابل مشاهده و آزمایش است. گام‌های پیش‌رو به شرح زیر است:
+</p>
+<ol>
+    <li>بررسی و تست محیط نرم‌افزار توسط مدیریت محترم شیرینی یاس.</li>
+    <li>دریافت فایل لوگوی رسمی شیرینی یاس و بارگذاری در سربرگ سامانه.</li>
+    <li>نهایی‌سازی لیست شیرینی‌ها، قیمت‌های روز هر کیلو و زمان‌های تحویل کارگاه.</li>
+    <li>اتصال نهایی مرچنت‌کد درگاه پرداخت و کلید وب‌سرویس پیامک به سرور ایران.</li>
+</ol>
+
+<table class="footer-sign">
+    <tr>
+        <td><strong>تاییدیه مشاور و طراح سیستم:</strong><br><br>مهندسی نرم‌افزار و هوش تجاری<br>امضا و تاریخ</td>
+        <td><strong>تاییدیه مدیریت کارگاه شیرینی یاس:</strong><br><br>سرکار خانم / جناب آقای مدیریت یاس<br>امضا و تاریخ</td>
+    </tr>
+</table>
+
+</body>
+</html>

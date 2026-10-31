@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نماهای تصویری سامانه آنلاین شیرینی یاس</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: #FAF7F2;
+      color: #1c1917;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 20px;
+      background: white;
+      border-radius: 20px;
+      border: 1px solid #e7e5e4;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    h1 {
+      color: #78350f;
+      margin: 0 0 10px 0;
+      font-size: 24px;
+      font-weight: 900;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: white;
+      border-radius: 24px;
+      padding: 20px;
+      border: 1px solid #e7e5e4;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
+      display: flex;
+      flex-col: column;
+      justify-content: space-between;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      border: 1px solid #f5f5f4;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      margin: 0 0 8px 0;
+      font-size: 16px;
+      color: #1c1917;
+    }
+    .card p {
+      color: #78716c;
+      font-size: 13px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+    .btn {
+      display: inline-block;
+      text-align: center;
+      background: #d97706;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 13px;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background: #b45309;
+    }
+    .badge {
+      display: inline-block;
+      background: #fef3c7;
+      color: #92400e;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="badge">گالری رسمی تصاویر رابط کاربری</span>
+      <h1>نماهای تصویری و مستندات سامانه «شیرینی یاس»</h1>
+      <p style="color:#78716c; font-size:14px; margin:0;">
+        تصاویر بخش‌های مختلف اپلیکیشن همراه با فایل طرح‌نامه رسمی جهت ارائه و تصمیم‌گیری نهایی
+      </p>
+    </div>
+
+    <div class="grid">
+      <!-- Screen 1 -->
+      <div class="card">
+        <div>
+          <span class="badge">صفحه موبایل خریدار</span>
+          <h3>۱. صفحه اصلی، ویترین و آلبوم عکس شیرینی‌ها</h3>
+          <p>
+            نمایش آلبوم تصاویر چندگانه، برچسب زمان پخت روزانه (مثلاً حداقل ۱۸ ساعت قبل)، قیمت هر کیلوگرم به تومان، ترکیبات سالم و امکان انتخاب وزن دلخواه.
+          </p>
+          <img src="/screenshots/screen1_storefront.svg" alt="صفحه اصلی شیرینی یاس">
+        </div>
+        <a href="/screenshots/screen1_storefront.svg" download="shirini-yas-storefront.svg" class="btn">
+          ⬇️ دانلود عکس باکیفیت صفحه اصلی
+        </a>
+      </div>
+
+      <!-- Screen 2 -->
+      <div class="card">
+        <div>
+          <span class="badge">فرآیند هوشمند سفارش</span>
+          <h3>۲. زمان‌بندی دقیق پخت و تقویم تحویل</h3>
+          <p>
+            محاسبه خودکار لیدتایم پخت، انتخاب بازه ساعتی دلخواه (صبح، ظهر، عصر) و انتخاب شیوه ارسال با خودرو مجهز به خنک‌کننده یا تحویل حضوری.
+          </p>
+          <img src="/screenshots/screen2_scheduling.svg" alt="زمان‌بندی تحویل شیرینی یاس">
+        </div>
+        <a href="/screenshots/screen2_scheduling.svg" download="shirini-yas-scheduling.svg" class="btn">
+          ⬇️ دانلود عکس باکیفیت زمان‌بندی
+        </a>
+      </div>
+
+      <!-- Screen 3 -->
+      <div class="card">
+        <div>
+          <span class="badge">تراکنش مالی و اطلاع‌رسانی</span>
+          <h3>۳. درگاه شاپرک و ارسال پیامک دوطرفه</h3>
+          <p>
+            اتصال شبیه‌ساز امن شاپرک با رمز پویا (OTP) و ارسال همزمان پیامک تایید به خریدار و پیامک آلارم سفارش فوری به مدیر شیرینی یاس.
+          </p>
+          <img src="/screenshots/screen3_payment_sms.svg" alt="پرداخت و پیامک شیرینی یاس">
+        </div>
+        <a href="/screenshots/screen3_payment_sms.svg" download="shirini-yas-payment-sms.svg" class="btn">
+          ⬇️ دانلود عکس باکیفیت پرداخت و پیامک
+        </a>
+      </div>
+
+      <!-- Screen 4 -->
+      <div class="card">
+        <div>
+          <span class="badge">پنل اختصاصی مدیریت</span>
+          <h3>۴. کارتابل کارگاه، نوبت فرها و پذیرش روزانه</h3>
+          <p>
+            مشاهده سفارش‌های فعال، تغییر گام‌به‌گام مرحله پخت در فر، گزارش درآمد و کلید کنترل ظرفیت روزانه فر کارگاه.
+          </p>
+          <img src="/screenshots/screen4_baker_admin.svg" alt="پنل مدیریت شیرینی یاس">
+        </div>
+        <a href="/screenshots/screen4_baker_admin.svg" download="shirini-yas-admin-panel.svg" class="btn">
+          ⬇️ دانلود عکس باکیفیت پنل مدیر
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 860" width="420" height="860" style="background:#FAF7F2; font-family:'Vazirmatn', Tahoma, sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#78350f" />
+      <stop offset="50%" stop-color="#b45309" />
+      <stop offset="100%" stop-color="#78350f" />
+    </linearGradient>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1917" />
+      <stop offset="60%" stop-color="#451a03" />
+      <stop offset="100%" stop-color="#1c1917" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Phone Frame Border -->
+  <rect x="5" y="5" width="410" height="850" rx="40" fill="#ffffff" stroke="#e7e5e4" stroke-width="3" />
+  
+  <!-- Notch / Status Bar -->
+  <rect x="140" y="12" width="140" height="22" rx="11" fill="#1c1917" />
+  <circle cx="250" cy="23" r="4" fill="#383838" />
+  <text x="375" y="26" font-size="11" font-weight="bold" fill="#78716c" text-anchor="end">10:30</text>
+  <text x="35" y="26" font-size="11" fill="#78716c">5G 📶 98%</text>
+
+  <!-- Top Announcement Bar -->
+  <rect x="10" y="42" width="400" height="28" fill="url(#headerGrad)" />
+  <text x="210" y="60" font-size="11" font-weight="bold" fill="#fef3c7" text-anchor="middle">✨ کارگاه شیرینی خانگی یاس | پخت تازه به سفارش شما</text>
+
+  <!-- App Header -->
+  <g transform="translate(20, 80)">
+    <!-- Logo Icon -->
+    <rect x="330" y="0" width="45" height="45" rx="14" fill="#fef3c7" stroke="#fde68a" stroke-width="1.5" />
+    <text x="352" y="30" font-size="22" text-anchor="middle">🧁</text>
+    
+    <!-- Title -->
+    <text x="320" y="24" font-size="19" font-weight="900" fill="#1c1917" text-anchor="end">شیرینی یاس</text>
+    <rect x="235" y="8" width="38" height="18" rx="5" fill="#ffe4e6" stroke="#fecdd3" />
+    <text x="254" y="21" font-size="10" font-weight="bold" fill="#be123c" text-anchor="middle">خانگی</text>
+    <text x="320" y="40" font-size="11" fill="#78716c" text-anchor="end">سفارش و تحویل شیرینی و کیک تازه</text>
+
+    <!-- Cart & Chat Action Buttons -->
+    <circle cx="25" cy="22" r="18" fill="#1c1917" />
+    <text x="25" y="27" font-size="14" fill="#fbbf24" text-anchor="middle">🛒</text>
+    <circle cx="70" cy="22" r="18" fill="#f5f5f4" stroke="#e7e5e4" />
+    <text x="70" y="27" font-size="14" fill="#44403c" text-anchor="middle">💬</text>
+  </g>
+
+  <!-- Hero Banner -->
+  <g transform="translate(20, 140)">
+    <rect x="0" y="0" width="380" height="110" rx="22" fill="url(#heroGrad)" />
+    <rect x="240" y="12" width="125" height="20" rx="10" fill="#f59e0b" fill-opacity="0.2" stroke="#f59e0b" stroke-opacity="0.4" />
+    <text x="302" y="26" font-size="10" font-weight="bold" fill="#fcd34d" text-anchor="middle">✨ پخت تازه با کره طبیعی</text>
+    
+    <text x="365" y="55" font-size="14" font-weight="bold" fill="#fffbeb" text-anchor="end">شیرینی خانگی اصیل، با پسته تازه</text>
+    <text x="365" y="74" font-size="10" fill="#d6d3d1" text-anchor="end">پخت روزانه انواع نان‌خامه‌ای، باقلوا، چیزکیک و رولت</text>
+
+    <!-- Trust tags -->
+    <rect x="230" y="84" width="135" height="18" rx="6" fill="#ffffff" fill-opacity="0.12" />
+    <text x="297" y="96" font-size="9" fill="#fef08a" text-anchor="middle">⏰ زمان‌بندی دقیق پخت و فر</text>
+    <rect x="85" y="84" width="135" height="18" rx="6" fill="#ffffff" fill-opacity="0.12" />
+    <text x="152" y="96" font-size="9" fill="#6ee7b7" text-anchor="middle">❄️ ارسال با محفظه خنک پیک</text>
+  </g>
+
+  <!-- Search Bar -->
+  <g transform="translate(20, 262)">
+    <rect x="0" y="0" width="380" height="38" rx="14" fill="#ffffff" stroke="#e7e5e4" filter="url(#shadow)" />
+    <text x="350" y="24" font-size="14">🔍</text>
+    <text x="330" y="24" font-size="11" fill="#a8a29e" text-anchor="end">جستجوی نام شیرینی، کیک، مواد اولیه (پسته، زعفران)...</text>
+  </g>
+
+  <!-- Category Pills -->
+  <g transform="translate(20, 312)">
+    <rect x="290" y="0" width="90" height="30" rx="12" fill="#d97706" />
+    <text x="335" y="20" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">همه (۸)</text>
+
+    <rect x="180" y="0" width="102" height="30" rx="12" fill="#ffffff" stroke="#e7e5e4" />
+    <text x="231" y="20" font-size="11" fill="#44403c" text-anchor="middle">شیرینی تر و خامه</text>
+
+    <rect x="80" y="0" width="92" height="30" rx="12" fill="#ffffff" stroke="#e7e5e4" />
+    <text x="126" y="20" font-size="11" fill="#44403c" text-anchor="middle">کیک و چیزکیک</text>
+
+    <rect x="-10" y="0" width="82" height="30" rx="12" fill="#ffffff" stroke="#e7e5e4" />
+    <text x="31" y="20" font-size="11" fill="#44403c" text-anchor="middle">شیرینی سنتی</text>
+  </g>
+
+  <!-- Product Card 1 -->
+  <g transform="translate(20, 355)">
+    <rect x="0" y="0" width="380" height="210" rx="20" fill="#ffffff" stroke="#e7e5e4" filter="url(#shadow)" />
+    <!-- Image placeholder area with warm tone -->
+    <rect x="0" y="0" width="380" height="120" rx="20" fill="#f5ede6" />
+    <text x="190" y="70" font-size="44" text-anchor="middle">🥐</text>
+    
+    <!-- Badges on image -->
+    <rect x="250" y="10" width="120" height="22" rx="8" fill="#1c1917" fill-opacity="0.85" />
+    <text x="310" y="25" font-size="10" font-weight="bold" fill="#fde68a" text-anchor="middle">⏰ حداقل ۱۸ ساعت قبل</text>
+
+    <rect x="10" y="10" width="85" height="22" rx="8" fill="#f43f5e" />
+    <text x="52" y="25" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">★ پرفروش هفته</text>
+
+    <rect x="300" y="90" width="70" height="20" rx="6" fill="#000000" fill-opacity="0.6" />
+    <text x="335" y="104" font-size="10" fill="#ffffff" text-anchor="middle">📷 ۳ عکس</text>
+
+    <!-- Card Content -->
+    <text x="365" y="145" font-size="14" font-weight="bold" fill="#1c1917" text-anchor="end">شیرینی تر نان‌خامه‌ای و اکلر شکلاتی</text>
+    <text x="365" y="165" font-size="11" fill="#78716c" text-anchor="end">خمیر شو سبک با خامه حیوانی تازه، عطر وانیل ماداگاسکار و شکلات بلژیکی</text>
+
+    <!-- Price & Add Button -->
+    <text x="365" y="195" font-size="15" font-weight="900" fill="#78350f" text-anchor="end">۳۸۰,۰۰۰ تومان</text>
+    <text x="260" y="195" font-size="11" fill="#a8a29e" text-anchor="end">/ هر کیلوگرم</text>
+
+    <rect x="15" y="174" width="115" height="28" rx="10" fill="#d97706" />
+    <text x="72" y="192" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">+ افزودن به سبد</text>
+  </g>
+
+  <!-- Product Card 2 (Partial view) -->
+  <g transform="translate(20, 580)">
+    <rect x="0" y="0" width="380" height="190" rx="20" fill="#ffffff" stroke="#e7e5e4" filter="url(#shadow)" />
+    <rect x="0" y="0" width="380" height="110" rx="20" fill="#fae8e0" />
+    <text x="190" y="65" font-size="44" text-anchor="middle">🍰</text>
+
+    <rect x="250" y="10" width="120" height="22" rx="8" fill="#1c1917" fill-opacity="0.85" />
+    <text x="310" y="25" font-size="10" font-weight="bold" fill="#fde68a" text-anchor="middle">⏰ حداقل ۲۴ ساعت قبل</text>
+
+    <text x="365" y="140" font-size="14" font-weight="bold" fill="#1c1917" text-anchor="end">رولت خامه‌ای توت‌فرنگی با گلاب ناب</text>
+    <text x="365" y="158" font-size="11" fill="#78716c" text-anchor="end">بافت پنبه‌ای ابریشمی با کرم خامه سبک و مارمالاد توت‌فرنگی دست‌ساز</text>
+    
+    <text x="365" y="180" font-size="15" font-weight="900" fill="#78350f" text-anchor="end">۴۲۰,۰۰۰ تومان</text>
+    <rect x="15" y="160" width="115" height="26" rx="10" fill="#d97706" />
+    <text x="72" y="177" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">+ افزودن به سبد</text>
+  </g>
+
+  <!-- Bottom Navigation Bar -->
+  <g transform="translate(10, 790)">
+    <rect x="0" y="0" width="400" height="60" rx="20" fill="#ffffff" stroke="#e7e5e4" />
+    
+    <!-- Tab 1: Storefront (Active) -->
+    <text x="340" y="28" font-size="18" text-anchor="middle">🏪</text>
+    <text x="340" y="46" font-size="10" font-weight="bold" fill="#b45309" text-anchor="middle">ویترین یاس</text>
+
+    <!-- Tab 2: Chat -->
+    <text x="240" y="28" font-size="18" text-anchor="middle">💬</text>
+    <text x="240" y="46" font-size="10" fill="#78716c" text-anchor="middle">گفتگو با قناد</text>
+
+    <!-- Tab 3: Tracking -->
+    <text x="140" y="28" font-size="18" text-anchor="middle">⏱️</text>
+    <text x="140" y="46" font-size="10" fill="#78716c" text-anchor="middle">پیگیری پخت</text>
+
+    <!-- Tab 4: Cart -->
+    <text x="50" y="28" font-size="18" text-anchor="middle">🛍️</text>
+    <circle cx="62" cy="18" r="7" fill="#dc2626" />
+    <text x="62" y="22" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">۱</text>
+    <text x="50" y="46" font-size="10" fill="#78716c" text-anchor="middle">سبد خرید</text>
+  </g>
+</svg>

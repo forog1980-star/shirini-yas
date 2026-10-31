@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 860" width="420" height="860" style="background:#FAF7F2; font-family:'Vazirmatn', Tahoma, sans-serif;">
+  <defs>
+    <filter id="shadow2" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Phone Frame Border -->
+  <rect x="5" y="5" width="410" height="850" rx="40" fill="#ffffff" stroke="#e7e5e4" stroke-width="3" />
+  
+  <!-- Notch -->
+  <rect x="140" y="12" width="140" height="22" rx="11" fill="#1c1917" />
+  <circle cx="250" cy="23" r="4" fill="#383838" />
+  <text x="375" y="26" font-size="11" font-weight="bold" fill="#78716c" text-anchor="end">10:32</text>
+  <text x="35" y="26" font-size="11" fill="#78716c">5G 📶 98%</text>
+
+  <!-- Modal Header -->
+  <g transform="translate(20, 50)">
+    <rect x="0" y="0" width="380" height="55" rx="18" fill="#fef3c7" stroke="#fde68a" />
+    <circle cx="345" cy="27" r="16" fill="#d97706" />
+    <text x="345" y="33" font-size="16" text-anchor="middle">📅</text>
+    
+    <text x="315" y="28" font-size="14" font-weight="900" fill="#78350f" text-anchor="end">زمان‌بندی پخت و تحویل سفارش</text>
+    <text x="315" y="44" font-size="10" fill="#92400e" text-anchor="end">بر اساس زمان مورد نیاز پخت شیرینی‌های تازه انتخابی شما</text>
+
+    <circle cx="30" cy="27" r="12" fill="#ffffff" />
+    <text x="30" y="32" font-size="12" fill="#78716c" text-anchor="middle">✕</text>
+  </g>
+
+  <!-- Lead-time Insight Card -->
+  <g transform="translate(20, 120)">
+    <rect x="0" y="0" width="380" height="65" rx="16" fill="#fffbeb" stroke="#fde68a" />
+    <text x="355" y="26" font-size="16">⏰</text>
+    <text x="330" y="26" font-size="12" font-weight="bold" fill="#92400e" text-anchor="end">قانون طلایی کیفیت شیرینی خانگی:</text>
+    <text x="350" y="46" font-size="10" fill="#78350f" text-anchor="end">شیرینی‌ها از پیش آماده نیستند؛ پس از ثبت سفارش با مواد تازه درون فر پخته می‌شوند.</text>
+    <text x="350" y="58" font-size="10" font-weight="bold" fill="#b45309" text-anchor="end">حداکثر زمان پخت این سبد: ۱۸ ساعت است.</text>
+  </g>
+
+  <!-- Section 1: Date Cards -->
+  <g transform="translate(20, 205)">
+    <text x="380" y="0" font-size="12" font-weight="bold" fill="#1c1917" text-anchor="end">🗓️ انتخاب روز تحویل شیرینی:</text>
+    
+    <!-- Option 1 (Selected) -->
+    <g transform="translate(195, 12)">
+      <rect x="0" y="0" width="185" height="70" rx="14" fill="#fef3c7" stroke="#d97706" stroke-width="2" />
+      <text x="170" y="24" font-size="12" font-weight="bold" fill="#78350f" text-anchor="end">فردا (عصر)</text>
+      <circle cx="25" cy="20" r="9" fill="#16a34a" />
+      <text x="25" y="25" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">✓</text>
+      <text x="170" y="44" font-size="10" fill="#92400e" text-anchor="end">ساعت ۱۷:۰۰ الی ۲۰:۰۰</text>
+      <text x="170" y="60" font-size="9" font-weight="bold" fill="#15803d" text-anchor="end">آماده‌سازی با خمیر تازه</text>
+    </g>
+
+    <!-- Option 2 -->
+    <g transform="translate(0, 12)">
+      <rect x="0" y="0" width="185" height="70" rx="14" fill="#ffffff" stroke="#e7e5e4" />
+      <text x="170" y="24" font-size="12" font-weight="bold" fill="#44403c" text-anchor="end">پس‌فردا (صبح)</text>
+      <text x="170" y="44" font-size="10" fill="#78716c" text-anchor="end">ساعت ۱۰:۰۰ الی ۱۳:۰۰</text>
+      <text x="170" y="60" font-size="9" fill="#a8a29e" text-anchor="end">پخت اول صبح</text>
+    </g>
+  </g>
+
+  <!-- Section 2: Time Slots -->
+  <g transform="translate(20, 310)">
+    <text x="380" y="0" font-size="12" font-weight="bold" fill="#1c1917" text-anchor="end">⏰ بازه زمانی ترجیحی برای حضور پیک:</text>
+    
+    <rect x="255" y="12" width="125" height="34" rx="10" fill="#ffffff" stroke="#e7e5e4" />
+    <text x="317" y="34" font-size="10" fill="#44403c" text-anchor="middle">۱۰:۰۰ الی ۱۳:۰۰ (صبح)</text>
+
+    <rect x="127" y="12" width="125" height="34" rx="10" fill="#ffffff" stroke="#e7e5e4" />
+    <text x="189" y="34" font-size="10" fill="#44403c" text-anchor="middle">۱۴:۰۰ الی ۱۷:۰۰ (ظهر)</text>
+
+    <!-- Selected Slot -->
+    <rect x="0" y="12" width="123" height="34" rx="10" fill="#d97706" />
+    <text x="61" y="34" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">۱۷:۰۰ الی ۲۱:۰۰ (عصر) ✓</text>
+  </g>
+
+  <!-- Section 3: Delivery Method -->
+  <g transform="translate(20, 380)">
+    <text x="380" y="0" font-size="12" font-weight="bold" fill="#1c1917" text-anchor="end">🚚 شیوه تحویل سفارش:</text>
+
+    <g transform="translate(195, 12)">
+      <rect x="0" y="0" width="185" height="55" rx="14" fill="#fef3c7" stroke="#d97706" stroke-width="1.5" />
+      <text x="170" y="24" font-size="11" font-weight="bold" fill="#78350f" text-anchor="end">پیک مخصوص کیک و شیرینی</text>
+      <text x="170" y="42" font-size="9" fill="#92400e" text-anchor="end">محفظه خنک و ضد ضربه</text>
+      <text x="25" y="34" font-size="18" text-anchor="middle">🛵</text>
+    </g>
+
+    <g transform="translate(0, 12)">
+      <rect x="0" y="0" width="185" height="55" rx="14" fill="#ffffff" stroke="#e7e5e4" />
+      <text x="170" y="24" font-size="11" font-weight="bold" fill="#44403c" text-anchor="end">تحویل حضوری از کارگاه</text>
+      <text x="170" y="42" font-size="9" fill="#78716c" text-anchor="end">نیاوران (بدون کرایه ارسال)</text>
+      <text x="25" y="34" font-size="18" text-anchor="middle">🏪</text>
+    </g>
+  </g>
+
+  <!-- Section 4: Customer Details Form -->
+  <g transform="translate(20, 475)">
+    <text x="380" y="0" font-size="12" font-weight="bold" fill="#1c1917" text-anchor="end">👤 اطلاعات تحویل‌گیرنده و نشانی:</text>
+
+    <!-- Name Input -->
+    <rect x="0" y="10" width="380" height="38" rx="12" fill="#fafaf9" stroke="#e7e5e4" />
+    <text x="365" y="34" font-size="11" fill="#1c1917" text-anchor="end">علیرضا رضایی (تحویل‌گیرنده)</text>
+    <text x="25" y="34" font-size="13">👤</text>
+
+    <!-- Phone Input -->
+    <rect x="0" y="58" width="380" height="38" rx="12" fill="#fafaf9" stroke="#e7e5e4" />
+    <text x="365" y="82" font-size="11" fill="#1c1917" text-anchor="end">۰۹۱۲۹۸۷۶۵۴۳ (جهت پیامک وضعیت)</text>
+    <text x="25" y="82" font-size="13">📱</text>
+
+    <!-- Address Input -->
+    <rect x="0" y="106" width="380" height="55" rx="12" fill="#fafaf9" stroke="#e7e5e4" />
+    <text x="365" y="128" font-size="11" fill="#1c1917" text-anchor="end">تهران، سعادت‌آباد، میدان کاج، خیابان سرو غربی، کوچه لادن</text>
+    <text x="365" y="148" font-size="10" fill="#78716c" text-anchor="end">پلاک ۱۸، واحد ۴ - زنگ واحد زده شود.</text>
+    <text x="25" y="136" font-size="13">📍</text>
+  </g>
+
+  <!-- Summary Box -->
+  <g transform="translate(20, 665)">
+    <rect x="0" y="0" width="380" height="75" rx="16" fill="#f5f5f4" stroke="#e7e5e4" />
+    <text x="365" y="24" font-size="11" fill="#78716c" text-anchor="end">جمع ۱ کیلو نان‌خامه‌ای + جعبه بهداشتی پنجره‌دار:</text>
+    <text x="40" y="24" font-size="11" font-weight="bold" fill="#1c1917">۴۰۰,۰۰۰ تومان</text>
+
+    <text x="365" y="44" font-size="11" fill="#78716c" text-anchor="end">پیک مخصوص حمل کیک و شیرینی با محفظه خنک:</text>
+    <text x="40" y="44" font-size="11" font-weight="bold" fill="#16a34a">رایگان 🎉</text>
+
+    <line x1="20" y1="52" x2="360" y2="52" stroke="#e7e5e4" />
+    <text x="365" y="68" font-size="12" font-weight="bold" fill="#1c1917" text-anchor="end">مبلغ نهایی قابل پرداخت:</text>
+    <text x="40" y="68" font-size="14" font-weight="900" fill="#b45309">۴۰۰,۰۰۰ تومان</text>
+  </g>
+
+  <!-- CTA Button -->
+  <g transform="translate(20, 760)">
+    <rect x="0" y="0" width="380" height="48" rx="16" fill="#d97706" />
+    <text x="190" y="30" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">تایید زمان‌بندی و اتصال به درگاه شاپرک ➔</text>
+  </g>
+</svg>
